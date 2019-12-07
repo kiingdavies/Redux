@@ -6,7 +6,8 @@ import App from "./components/App";
 import reducers from "./reducers";
 import thunk from 'redux-thunk';
 
-const store = createStore(reducers, applyMiddleware(thunk));
+const store = createStore(reducers, applyMiddleware(thunk)); //reducers contains all the departments while thunk is the middleware that takes in both state & action
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
